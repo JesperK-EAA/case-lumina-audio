@@ -1,5 +1,39 @@
+:root {
+    /* Colors */
+    --primary-color: red;
+    --secoundary-color: red;
+    --highlight-color: red;
+    
+    /* Font type */
+    --font-type: "poppy";
+    
+    /* Font size */
+    /* base  */
+    --font-size-base-small: 0.8rem;
+    --font-size-base: 1rem;
+    --font-size-base-big: 1.2rem;
+    
+    /* header */
+    --font-size-header-h4: 1.8rem;
+    --font-size-header-h3: 2rem;
+    --font-size-header-h2: 4rem;
+
+    /* hero */
+    --font-size-hero: 64px;
+    --font-size-hero-tablet: 2.5rem;
+    --font-size-mobile: 2.5rem;
+
+    /* Font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 700;
+    --font-weight-bold: 900;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: var(--font-type);    
 }
