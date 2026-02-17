@@ -14,13 +14,13 @@
   --font-size-base-small: 0.8rem;
   --font-size-base: 1rem;
   --font-size-base-big: 1.2rem;
-  --font-size-medium: 1.2rem;
-  --font-size-large: 1.2rem;
-  --font-size-xl: 1.2rem;
-  --font-size-xxl: 1.2rem;
+  --font-size-medium: 1.44rem;
+  --font-size-large: 1.728rem;
+  --font-size-xl: 2.074rem;
+  --font-size-xxl: 2.488rem;
 
   /* hero */
-  --font-size-hero: 64px;
+  --font-size-hero: 3rem;
   --font-size-hero-tablet: 2.5rem;
   --font-size-mobile: 2.5rem;
 
@@ -42,14 +42,42 @@
 html{
   background-color: var(--primary-color);
 }
-/* mobile deafult */
 
+/* mobile deafult */
+header {
+  display: flex;
+  justify-content: center;
+}
 
 /* Tablet */
-@media (width-min: 380px) {
+@media (min-width: 380px) { 
+
 }
 
 /* Desktop */
-@media (width-min: 1200px) {
+@media (min-width: 1200px) {
+ body {
+  width: 1140px;
+  margin: auto;
+ }
+  
+  h1,h2,h3,h4,h5,h6, p {
+    color: var(--black-color);
+  }
+  h2 {
+    font-size: var(--font-size-xxl);
+  }
+
+  #hero {
+    display: flex;
+  } 
+
+  .flex-row-wrap{
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+
 
 }
