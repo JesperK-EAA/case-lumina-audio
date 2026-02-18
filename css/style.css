@@ -57,8 +57,9 @@ html {
 body {
   width: 100%;
   padding-inline: 8px;
-/*   border: 1px solid black;
- */}
+  /*   border: 1px solid black;
+ */
+}
 
 header {
   display: flex;
@@ -94,7 +95,7 @@ section {
 }
 
 /* CTA-button  */
-.cta-button {
+.hero-cta-button {
   border-radius: 32px;
   width: 100%;
 
@@ -109,7 +110,7 @@ section {
   transition: color ease 0.5s;
 }
 
-.cta-button:hover {
+.hero-cta-button:hover {
   background-color: #8b2619;
   cursor: pointer;
 }
@@ -257,6 +258,26 @@ section {
   font-weight: var(--font-weight-semibold);
 }
 
+.cta-section button {
+    border-radius: 32px;
+    width: 100%;
+    
+    padding: 16px 0;
+
+    background-color: var(--highlight-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 8px var(--black-transparent-color);
+
+    font-size: var(--font-size-base-big);
+    font-weight: var(--font-weight-semibold);
+    transition: color ease 0.5s;
+  }
+
+  .cta-section button:hover {
+    background-color: #8b2619;
+    cursor: pointer;
+  }
+
 /*-------------------------- Desktop -------------------------- */
 @media (min-width: 840px) {
   body {
@@ -273,7 +294,7 @@ section {
   }
 
   /* CTA-button  */
-  .cta-button {
+  .hero-cta-button {
     width: fit-content;
     padding: 16px 64px;
   }
@@ -356,5 +377,18 @@ section {
   .collection img {
     width: auto;
     max-width: 100%;
-}
+  }
+
+  .cta-section {
+    width: fit-content;
+    margin-inline: auto;
+  }
+  
+  .cta-section button {
+    padding: 40px 126px;
+    border-radius: 100px;
+    font-size: var(--font-size-large);
+  }
+
+
 }
