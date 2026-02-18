@@ -51,6 +51,7 @@ html {
 body {
   width: 100%;
   padding-inline: 8px;
+  border: 1px solid black;
 }
 
 header {
@@ -142,9 +143,11 @@ section {
 }
 
 /* Benefit section */
-.benefits-backgorund  {
+.benefits-backgorund {
+  width: 100%;
   position: absolute;
   top: 0;
+  z-index: -2;
 }
 
 .collection-list {
@@ -167,6 +170,13 @@ section {
 
 .product-360 {
   display: none;
+}
+
+/* Products */
+
+.products img {
+  width: 100%;
+  min-width: 0;
 }
 
 /* Desktop */
@@ -228,8 +238,8 @@ section {
   }
 
   /* Benefits  */
-  .benefits-backgorund  {
-    width: 100%;  
+  .benefits-backgorund {
+    width: 100%;
   }
 
   .benefits-w-360 {
@@ -242,4 +252,11 @@ section {
     width: 50%;
     display: block;
   }
+
+  /* Products */
+  .products {
+    display: flex;
+  }
+
+  
 }
