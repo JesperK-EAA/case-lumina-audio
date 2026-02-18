@@ -5,9 +5,15 @@
   --backgorund-color: #fff4f0;
   --accent-color: #fdebe9;
   --highlight-color: #ff92ac;
+
   --black-color: #101010;
   --black-transparent-color: rgb(16, 16, 16, 0.25);
   --white-color: #ffffff;
+
+  --dusty-rose-color: #de9498;
+  --sage-green-color: #87937c;
+  --moonlight-white-color: #e9e0de;
+  --lavender-mist-color: #dfb9e6;
 
   /* Font family */
   --font-family: "Poppins", sans-serif;
@@ -173,10 +179,47 @@ section {
 }
 
 /* Products */
-
-.products img {
+.products-gallery img {
   width: 100%;
   min-width: 0;
+}
+
+/* Product color selection */
+
+.product-color-gallery img {
+  width: 100%;
+  min-width: 0;
+}
+
+.color-select {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.color-cirkle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--black-color);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.color-selected {
+  border: 4px solid var(--black-color);
+}
+
+#dusty-rose {
+  background-color: var(--dusty-rose-color);
+}
+#sage-green {
+  background-color: var(--sage-green-color);
+}
+#moonlight-white {
+  background-color: var(--moonlight-white-color);
+}
+#lavender-mist {
+  background-color: var(--lavender-mist-color);
 }
 
 /* Desktop */
@@ -254,9 +297,12 @@ section {
   }
 
   /* Products */
-  .products {
+  .products-gallery {
     display: flex;
   }
 
-  
+  /*Product color gallery */
+  .product-color-gallery {
+    display: flex;
+  }
 }
