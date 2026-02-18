@@ -57,8 +57,8 @@ html {
 body {
   width: 100%;
   padding-inline: 8px;
-  border: 1px solid black;
-}
+/*   border: 1px solid black;
+ */}
 
 header {
   display: flex;
@@ -156,20 +156,20 @@ section {
   z-index: -2;
 }
 
-.collection-list {
+.benefit-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 }
 
-.collection {
+.benefit-collection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.collection .col-head {
+.benefit-collection .benefit-head {
   font-size: var(--font-size-base-big);
   font-weight: var(--font-weight-semibold);
 }
@@ -185,7 +185,6 @@ section {
 }
 
 /* Product color selection */
-
 .product-color-gallery img {
   width: 100%;
   min-width: 0;
@@ -203,6 +202,7 @@ section {
   border: 1px solid var(--black-color);
   border-radius: 100px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .color-selected {
@@ -222,7 +222,42 @@ section {
   background-color: var(--lavender-mist-color);
 }
 
-/* Desktop */
+/* Functions */
+.function-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.function-collection .function-col-head {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Specifications */
+.collection-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collection img {
+  width: 60px;
+  max-width: 100%;
+}
+
+.collection .col-head {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-semibold);
+}
+
+/*-------------------------- Desktop -------------------------- */
 @media (min-width: 840px) {
   body {
     width: 1120px;
@@ -305,4 +340,21 @@ section {
   .product-color-gallery {
     display: flex;
   }
+
+  /* Functions list */
+  .function-collection-list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* Specifications */
+  .collection-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .collection img {
+    width: auto;
+    max-width: 100%;
+}
 }
