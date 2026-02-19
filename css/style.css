@@ -141,7 +141,7 @@ section {
 
   font-size: var(--font-size-base-big);
   font-weight: var(--font-weight-semibold);
-  transition: color ease 0.5s;
+  transition: background-color ease-in 0.3s;
 }
 
 .hero-cta-button:hover {
@@ -150,7 +150,6 @@ section {
 }
 
 /* Benefit section */
-
 .benefits-info {
   position: relative;
 }
@@ -273,11 +272,6 @@ section {
   text-align: center;
 }
 
-.spec-item img {
-  /* width: 60px;
-  max-width: 100%; */
-}
-
 .spec-item .spec-head {
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-semibold);
@@ -322,7 +316,10 @@ section {
 }
 
 .social-media-btn {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 50px;
   height: 50px;
   
@@ -430,7 +427,6 @@ footer {
   }
 
   /* Benefits  */
-
   .benefits-info {
     display: flex;
     justify-content: center;
@@ -444,9 +440,6 @@ footer {
   }
 
   .benefit-item img {
-    /* max-width: 120px;
-    width: 100%; */
-
     width: 98px;
   }
 
