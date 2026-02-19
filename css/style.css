@@ -211,6 +211,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: var(--spacing-md);
 }
 
 .product-color-gallery img {
@@ -473,7 +474,6 @@ footer {
   /* Product color gallery */
   .product-color-gallery {
     flex-direction: row;
-    margin-bottom: var(--spacing-md);
   }
 
   /* Function list */
