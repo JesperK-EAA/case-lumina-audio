@@ -12,7 +12,7 @@
     <title>Lumina Audio</title>
   </head>
 
-  <body>
+  <body id="top-page">
     <header>
       <img
         class="logo"
@@ -24,9 +24,11 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="hero-text">
+        <div>
           <h1><span>PLAY.</span> <span>GLOW.</span> <span>CONNECT.</span></h1>
-          <p>LUMINA ONE gør enhver samling til noget særligt</p>
+          <p class="hero-description">
+            LUMINA ONE gør enhver samling til noget særligt
+          </p>
         </div>
 
         <img
@@ -44,33 +46,33 @@
       <section class="section">
         <h2>Detaljer, der gør forskellen.</h2>
 
-        <img
-          class="benefits-backgorund"
-          src="img/background-effect.svg"
-          alt=""
-        />
-
-        <div class="benefits-w-360">
+        <div class="benefits-info">
           <img
-            class="product-360"
+            class="benefits-backgorund"
+            src="img/background-effect.svg"
+            alt=""
+          />
+
+          <img
+            class="benefit-product-360"
             src="img/product-360.png"
             alt="Product of with 360 turning"
           />
 
           <div class="benefit-list">
-            <div class="benefit-collection">
+            <div class="benefit-item">
               <img src="img/icons/water-proof.png" alt="" />
               <p class="benefit-head">VANDAFVISENDE</p>
               <p>TÅLER ØJEBLIKKET</p>
             </div>
 
-            <div class="benefit-collection">
+            <div class="benefit-item">
               <img src="img/icons/easy-to-transport.png" alt="" />
               <p class="benefit-head">LET</p>
               <p>TAG STEMNINGEN MED DIG</p>
             </div>
 
-            <div class="benefit-collection">
+            <div class="benefit-item">
               <img src="img/icons/electricity.png" alt="" />
               <p class="benefit-head">STRØM</p>
               <p>FRA SOLOPGANG TIL SOLNEDGANG</p>
@@ -82,7 +84,7 @@
       <!-- Products -->
       <section class="section">
         <h2>Ren lyd. Rent design.</h2>
-        <div class="products-gallery">
+        <div class="product-gallery">
           <img
             src="img/product/dusty-rose/dusty-rose-product.png"
             alt="LUMINA ONE product with color of dusty rose  "
@@ -114,10 +116,10 @@
         </div>
 
         <div class="color-select">
-          <div class="color-selected color-cirkle" id="dusty-rose"></div>
-          <div class="color-cirkle" id="sage-green"></div>
-          <div class="color-cirkle" id="moonlight-white"></div>
-          <div class="color-cirkle" id="lavender-mist"></div>
+          <button class="color-selected color-cirkle" id="dusty-rose"></button>
+          <button class="color-cirkle" id="sage-green"></button>
+          <button class="color-cirkle" id="moonlight-white"></button>
+          <button class="color-cirkle" id="lavender-mist"></button>
         </div>
       </section>
 
@@ -125,20 +127,28 @@
       <section class="section">
         <h2>Forbind. Spil. Del.</h2>
 
-        <div class="function-collection-list">
-          <div class="function-collection">
+        <div class="func-list">
+          <img
+            class="func-backgorund"
+            src="img/background-effect.svg"
+            alt=""
+          />
+
+          <div class="func-item">
             <img src="img/icons/multi-connect.png" alt="" />
-            <p class="function-col-head">MULTI CONNECT</p>
+            <p class="func-head">MULTI CONNECT</p>
             <p>FORBIND 4 ENHEDER</p>
           </div>
-          <div class="function-collection">
+
+          <div class="func-item">
             <img src="img/icons/bluetooth.png" alt="" />
-            <p class="function-col-head">BLUETOOTH</p>
+            <p class="func-head">BLUETOOTH</p>
             <p>TRÅDLØS FRIHED</p>
           </div>
-          <div class="function-collection">
+
+          <div class="func-item">
             <img src="img/icons/shared-playlist.png" alt="" />
-            <p class="function-col-head">SHUFFLE CONNECT</p>
+            <p class="func-head">SHUFFLE CONNECT</p>
             <p>PLAYLIST I FÆLLESKAB</p>
           </div>
         </div>
@@ -148,63 +158,63 @@
       <section class="section">
         <h2>Specifikationer</h2>
 
-        <div class="collection-list">
-          <div class="collection">
+        <div class="spec-list">
+          <div class="spec-item">
             <img src="img/icons/batteries-life-span.png" alt="" />
-            <p class="col-head">BATTERITID</p>
+            <p class="spec-head">BATTERITID</p>
             <p>OP TIL 18 TIMER</p>
           </div>
 
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/max-sound.png" alt="" />
-            <p class="col-head">MAKS. LYDSTYRKE</p>
+            <p class="spec-head">MAKS. LYDSTYRKE</p>
             <p>OP TIL 100 DB</p>
           </div>
 
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/sound-system.png" alt="" />
-            <p class="col-head">LYDSYSTEM</p>
+            <p class="spec-head">LYDSYSTEM</p>
             <p>2-VEJS STEREOSYSTEM MED FORSTÆRKET BAS</p>
           </div>
 
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/charching.png" alt="" />
-            <p class="col-head">OPLADNING</p>
+            <p class="spec-head">OPLADNING</p>
             <p>USB-C</p>
           </div>
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/weight.png" alt="" />
-            <p class="col-head">VÆGT</p>
+            <p class="spec-head">VÆGT</p>
             <p>3 KG</p>
           </div>
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/charching-time.png" alt="" />
-            <p class="col-head">OPLADNINGSTID</p>
+            <p class="spec-head">OPLADNINGSTID</p>
             <p>CA. 3 TIMER</p>
           </div>
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/range.png" alt="" />
-            <p class="col-head">RÆKKEVIDDE</p>
+            <p class="spec-head">RÆKKEVIDDE</p>
             <p>OP TIL 20 METER</p>
           </div>
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/light.png" alt="" />
-            <p class="col-head">LYS</p>
+            <p class="spec-head">LYS</p>
             <p>JUSTERBART LED-LYS: CHILL/PARTY/SUNSET</p>
           </div>
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/entrance.png" alt="" />
-            <p class="col-head">INDGANGE</p>
+            <p class="spec-head">INDGANGE</p>
             <p>BLUETOOTH + 3.5 MM AUX</p>
           </div>
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/length.png" alt="" />
-            <p class="col-head">MÅL</p>
+            <p class="spec-head">MÅL</p>
             <p>32 CM (H) X 18 CM (Ø)</p>
           </div>
-          <div class="collection">
+          <div class="spec-item">
             <img src="img/icons/material.png" alt="" />
-            <p class="col-head">MATERIALE</p>
+            <p class="spec-head">MATERIALE</p>
             <p>TEKSTILFRONT + MAT KOMPOSITRAMME</p>
           </div>
         </div>
@@ -262,6 +272,7 @@
       </div>
 
       <button class="to-top-btn">Tilbage til toppen</button>
+
       <div class="footer-protection">
         <p>©2026 All rights reserved</p>
         <p>Terms Privacy</p>
