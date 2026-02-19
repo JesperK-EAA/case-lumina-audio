@@ -2,9 +2,10 @@
 
 :root {
   /* Colors */
-  --backgorund-color: #fff4f0;
+  --background-color: #fff4f0;
   --accent-color: #fdebe9;
   --highlight-color: #ff92ac;
+  --btn-hover-color: #e87993;
 
   --footer-bg-color: #fdeae8;
   --footer-top-color: #483e3e;
@@ -30,9 +31,8 @@
   --font-size-xl: 2.074rem;
   --font-size-xxl: 2.488rem;
 
-  /* hero */
+  /* hero size */
   --font-size-hero: 9.375rem;
-  --font-size-hero-tablet: 2.5rem;
   --font-size-mobile: 3rem;
 
   /* Font weight */
@@ -41,6 +41,10 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 700;
   --font-weight-bold: 900;
+
+  /* Spacing */
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
 }
 
 /* Reset */
@@ -52,7 +56,7 @@
 }
 
 html {
-  background-color: var(--backgorund-color);
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
 }
@@ -90,7 +94,7 @@ button {
 }
 
 section {
-  padding: 40px 0;
+  margin: 40px 0;
 }
 
 /* Header */
@@ -100,12 +104,14 @@ section {
 }
 
 /* Main */
-/* Hero section */
+/*----------------------------- Hero section MOBILE ----------------------------- */
 .hero {
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: var(--spacing-lg);
+
   text-align: center;
 }
 
@@ -130,7 +136,7 @@ section {
 }
 
 .hero-cta-button {
-  border-radius: 32px;
+  border-radius: var(--spacing-lg);
   width: 100%;
 
   padding: 16px 0;
@@ -145,16 +151,17 @@ section {
 }
 
 .hero-cta-button:hover {
-  background-color: #8b2619;
+  background-color: var(--btn-hover-color);
   cursor: pointer;
 }
+/*---------------------------------------------------------------------- */
 
 /* Benefit section */
 .benefits-info {
   position: relative;
 }
 
-.benefits-backgorund {
+.benefits-background {
   width: 100%;
   position: absolute;
   top: 0;
@@ -165,7 +172,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: var(--spacing-md);
 }
 
 .benefit-item {
@@ -188,20 +195,33 @@ section {
 }
 
 /* Product gallery */
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-gallery img {
-  width: 100%;
+  width: 50%;
 }
 
 /* Product color gallery */
+.product-color-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-color-gallery img {
-  width: 100%;
+  width: 50%;
   min-width: 0;
 }
 
 .color-select {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: var(--spacing-lg);
 }
 
 .color-cirkle {
@@ -241,17 +261,13 @@ section {
   position: relative;
 }
 
-.func-backgorund {
+.func-background {
   position: absolute;
   width: 100%;
   transform: scaleX(-1);
   top: 50%;
   z-index: -2;
 }
-
-/* .func-item img {
-  width: 94px;
-} */
 
 .func-item .func-head {
   font-size: var(--font-size-medium);
@@ -262,7 +278,7 @@ section {
 .spec-list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 16px;
+  gap: var(--spacing-md);
 }
 
 .spec-item {
@@ -278,7 +294,7 @@ section {
 }
 
 .cta-section button {
-  border-radius: 32px;
+  border-radius: var(--spacing-lg);
   width: 100%;
 
   padding: 16px 0;
@@ -289,12 +305,12 @@ section {
 
   font-size: var(--font-size-base-big);
   font-weight: var(--font-weight-semibold);
-  transition: color ease 0.5s;
+  transition: background-color ease 0.5s;
 }
 
 /* Cta buy */
 .cta-section button:hover {
-  background-color: #8b2619;
+  background-color: var(--btn-hover-color);
   cursor: pointer;
 }
 
@@ -303,7 +319,7 @@ section {
   display: flex;
   margin-inline: auto;
   align-items: center;
-  gap: 32px;
+  gap: var(--spacing-lg);
 }
 
 .social-media-desktop {
@@ -322,7 +338,7 @@ section {
 
   width: 50px;
   height: 50px;
-  
+
   border-radius: 100px;
   flex-shrink: 0;
   padding: 4px;
@@ -341,12 +357,12 @@ footer {
   flex-direction: column;
   gap: 40px;
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: var(--spacing-lg);
 }
 
 .newsletter {
   background-color: var(--footer-bg-color);
-  padding: 32px;
+  padding: var(--spacing-lg);
   display: flex;
   flex-direction: column;
   gap: 54px;
@@ -365,7 +381,7 @@ footer {
 .to-top-btn {
   background-color: var(--footer-top-color);
   color: var(--white-color);
-  border-radius: 32px;
+  border-radius: var(--spacing-lg);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   padding: 16px 0;
@@ -380,7 +396,7 @@ footer {
 @media (min-width: 840px) {
   body {
     width: 1120px;
-    padding-inline: 32px;
+    padding-inline: var(--spacing-lg);
   }
 
   section {
@@ -398,7 +414,7 @@ footer {
   }
 
   /* Main */
-  /* Hero section */
+  /*----------------------------- Hero section DESKTOP ----------------------------- */
   .hero {
     position: relative;
     align-items: start;
@@ -407,7 +423,7 @@ footer {
 
   .hero .hero-cta {
     flex-direction: row;
-    gap: 32px;
+    gap: var(--spacing-lg);
   }
 
   .hero-description {
@@ -425,6 +441,7 @@ footer {
     width: fit-content;
     padding: 16px 64px;
   }
+  /*----------------------------------------------------------------------------------- */
 
   /* Benefits  */
   .benefits-info {
@@ -445,15 +462,18 @@ footer {
 
   /* Product gallery */
   .product-gallery {
-    display: flex;
+    flex-direction: row;
   }
+
   .product-gallery img {
+    width: 100%;
     min-width: 0;
   }
 
   /* Product color gallery */
   .product-color-gallery {
-    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--spacing-md);
   }
 
   /* Function list */
@@ -464,18 +484,18 @@ footer {
 
   .func-item img {
     width: 94px;
-    margin-bottom: 16px;
+    margin-bottom: var(--spacing-md);
   }
 
   /* Specifications */
   .spec-list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: var(--spacing-lg);
   }
 
   .spec-item img {
     width: 94px;
-    margin-bottom: 16px;
+    margin-bottom: var(--spacing-md);
   }
 
   /* Cta buy */
@@ -496,7 +516,7 @@ footer {
   .social-media-desktop {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: var(--spacing-lg);
   }
 
   .social-media-desktop-gallery {
@@ -511,13 +531,13 @@ footer {
   .social-media-desktop-btns {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: var(--spacing-lg);
   }
 
   .social-media-btn {
     width: 70px;
     height: 70px;
-    padding: 16px;
+    padding: var(--spacing-md);
   }
 
   /* footer */
@@ -529,6 +549,6 @@ footer {
   .to-top-btn {
     margin-inline: auto;
     width: fit-content;
-    padding: 16px;
+    padding: var(--spacing-md);
   }
 }
